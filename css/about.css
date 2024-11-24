@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+.activeLink {
+    color: red;
+    border-bottom: .1rem solid red;
+    padding-bottom: .5rem;
+}
+
+* {
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Nunito Sans", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #d1002c;
+    border-radius: 5rem;
+}
+
+
+body {
+    background: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3.5rem 7%;
+    border-bottom: var(black);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 26px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+
+.header span {
+    color: #d1002c;
+}
+
+.header .navbar {
+    list-style: none;
+    display: flex;
+}
+
+.header .navbar a {
+    font-weight: 500;
+    margin: 0px 2rem;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.header .navbar a:hover {
+    color: #d1002c;
+}
+
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/bg_2.jpg.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+.home .content p {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    line-height: 0.3;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.para {
+    padding-top: 33vh;
+    padding-bottom: 16px;
+}
+
+.para span{
+    color: #d1002c;
+}
+
+
+.content a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #d1002c;
+    padding: 12px 34px;
+    font-size: 18px;
+    font-weight: 200;
+    background-image: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+.container1 {
+    padding-bottom: 50px;
+    margin: 80px;
+}
+
+.container1 .about {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+    font-size: 40px;
+}
+
+.container1 .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 4fr));
+    gap: 30px;
+}
+
+.container1 .box-container .box {
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 30px, 20px;
+    width: 250px;
+    height: 200px;
+}
+
+.container1 .box-container .box img {
+    width: 60px;
+    height: 60px;
+}
+
+.container1 .box-container .box h3 {
+    color: #444;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.container1 .box-container .box p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero-left {
+    width: 100%;
+}
+
+.hero-right {
+    width: 45%;
+}
+.welcome p{
+    line-height: 1.8;
+    font-size: 1.3rem;
+    color: #777;
+}
+
+.hero-right img {
+    width: 20vw;
+    height: 45vh;
+    border-radius: 5px;
+}
+
+.welcome {
+    padding: 20px;
+}
+
+.welcome h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sechero-left{
+    width: 90%;
+}
+.secwelcome p{
+    line-height: 2.5;
+}
+.secwelcome a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #d1002c;
+    padding: 12px;
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    font-weight: 200;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.number span{
+    position: relative;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 1;
+    color: #d1002c;
+}
+
+.feature {
+    display: flex;
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #777;
+}
+ 
+
+.smallintro {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url(../images/bg_1.jpg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 70%;
+    height: 60vh;
+    border-radius: 4px;
+    margin-left: 32vh;
+    margin-bottom: 40px;
+}
+.smallintro h1{
+    padding-top: 62px;
+}
+
+.smallintro h2{
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.smallintro p{
+    margin-top: 24px;
+    margin-bottom: 2rem;
+}
+
+.button2 {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+  
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    gap: 6.5rem;
+    /* background: black;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    font-size: 16px;
+    padding: 7em 0;
+    background: black;
+    position: relative;
+    padding-left: 70px;
+
+}
+
+.footer-content h4 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+.footer-content li {
+    margin-bottom: 16px;
+}
+
+.footer-content li a {
+    display: block;
+    color: #d6d6d6;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .40s ease;
+}
+
+.footer-content li a:hover {
+    transform: translateY(-3px) translateX(-5px);
+    color: #fff;
+}
+
+.footer-content p {
+    color: #d6d6d6;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+
+.icons img {
+    display: inline-block;
+    background: #d6d6d6;
+    margin-right: 17px;
+    transition: all .40s ease;
+}
+
+.icons img:hover {
+    background: #d1002c;
+    transform: translateY(-5px);
+}

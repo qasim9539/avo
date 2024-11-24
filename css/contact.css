@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+.activeLink {
+    color: red;
+    border-bottom: .1rem solid red;
+    padding-bottom: .5rem;
+}
+
+* {
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Nunito Sans", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #d1002c;
+    border-radius: 5rem;
+}
+
+
+body {
+    background: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3.5rem 7%;
+    border-bottom: var(black);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 26px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+
+.header span {
+    color: #d1002c;
+}
+
+.header .navbar {
+    list-style: none;
+    display: flex;
+}
+
+.header .navbar a {
+    font-weight: 500;
+    margin: 0px 2rem;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.header .navbar a:hover {
+    color: #d1002c;
+}
+
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/bg_1.jpg.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+.home .content p {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    line-height: 0.3;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.para {
+    padding-top: 33vh;
+    padding-bottom: 16px;
+}
+
+.para span{
+    color: #d1002c;
+}
+
+
+.content a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #d1002c;
+    padding: 12px 34px;
+    font-size: 18px;
+    font-weight: 200;
+    background-image: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
